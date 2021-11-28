@@ -1,0 +1,33 @@
+{
+  "displayName": "Translator",
+  "defaultWidth": 160,
+  "defaultHeight": 24,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "translationTable",
+      "displayName": "Where are the translations stored?",
+      "type": "list"
+    },
+    {
+      "name": "translationKey",
+      "displayName": "Where are the translation keys?",
+      "type": "text",
+      "role": "listItem",
+      "reference": "translationTable"
+    },
+    {
+      "name": "translationText",
+      "displayName": "Where are the actual translations?",
+      "type": "text",
+      "role": "listItem",
+      "reference": "translationTable"
+    },
+    {
+      "name": "loadingComplete",
+      "displayName": "Triggered when loading the translation is complete",
+      "type": "action"
+    }
+  ]
+}
