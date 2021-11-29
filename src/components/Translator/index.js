@@ -46,7 +46,6 @@ class DeepLinking extends Component {
         );
       });
       if (this.props.loadingComplete) {
-        this.props.refresh.onChange();
         this.props.loadingComplete();
       }
     }

@@ -1,7 +1,7 @@
 {
   "name": "adalo-multilanguage",
   "description": "Auto-magic support for multiple languages in Adalo",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "ISC",
   "author": "Steven McKeown",
