@@ -12,13 +12,13 @@ function searchAndUpdate(obj, translations) {
     }
     return
   }
-  if (obj.text && typeof obj.text === "string") {
+  if (obj.text && typeof obj.text === "string" && translations[obj.text]) {
     obj.text = translations[obj.text]
   }
-  if (obj.placeholder && typeof obj.placeholder === "string") {
+  if (obj.placeholder && typeof obj.placeholder === "string" && translations[obj.placeholder]) {
     obj.placeholder = translations[obj.placeholder]
   }
-  if (obj.label && typeof obj.label === "string") {
+  if (obj.label && typeof obj.label === "string" && translations[obj.label]) {
     obj.label = translations[obj.label]
   }
 
